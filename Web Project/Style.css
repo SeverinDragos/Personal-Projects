@@ -1,0 +1,228 @@
+body {
+	background-image: url("background.jpg");
+	background-repeat: repeat;
+	font-family: "Comic Sans MS";
+}
+
+@media screen and (max-width: 1000px) {
+	body {
+		background-image: url("background-rezerva.jpg");
+		background-repeat: repeat;
+	}
+}
+
+aside img{
+	float: right;
+	height: 10%;
+	width: 10%;
+}
+
+.logo {
+	position: relative;
+	height: 10%;
+	width: 10%;
+	display: block;
+	margin-left: 40%;
+	margin-right: auto;
+	transition: transform 2s;
+}
+
+.logo:hover {
+	transform: skew(25deg);
+}
+
+h1 {
+	text-align: center;
+}
+
+h1 > span {
+	border: 5px solid blue;
+	border-radius: 150px;
+	background-color: yellow;
+}
+
+#Introduction article, p{
+	font-size: em;
+	color: #b3f0ff;
+	text-align: left;
+	text-indent: 2em;
+}
+
+div p {
+	font-size: em;
+	color: #b3f0ff;
+	text-align: left;
+	text-indent: 2em;
+}
+
+h2 + article {
+	font-size: em;
+	color:#b3f0ff;
+	text-align: left;
+	text-indent: 2em;
+}
+
+#Coco h2 span {
+	border:5px dotted orange;
+	border-radius: 100px;
+	background-color: purple;
+}
+
+#Coco article span {
+	color: green;
+}
+
+#Frozen h2 span {
+	border:5px solid #0000cc;
+	border-radius: 100px;
+	background-color: #33ccff;
+}
+
+#InsideOut h2 span {
+	border:5px outset #ff00bf;
+	border-radius: 100px;
+	background-color: #ccffee;
+}
+
+#Zootopia h2 span {
+	border: 5px groove #40ff00;
+	border-radius: 100px;
+	background-color: #ff9900;
+}
+
+div ul li:first-child {
+	color: #ff0000;
+}
+
+div ul > li:nth-of-type(2) {
+	color: #33cc33;
+}
+
+div ul > li:nth-of-type(3) {
+	color: #993333;
+}
+
+///Meniu Dropdown
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+	float: left;
+	background-color: black;
+	border: 1px solid white;
+	display: inline-block;
+}
+
+nav li span {
+    color: white;
+    text-align: center;
+    padding: 4px 8px;
+}
+
+nav li div {
+    visibility: hidden;
+	position: absolute;
+}
+
+nav li:hover div {
+	visibility: visible;
+	z-index: 10;
+}
+
+nav li a {
+    color: white;
+    padding: 4px 4px;
+    text-decoration: none;
+    display: block;
+	background-color: black;
+	border: 1px solid white;
+    text-align: left;
+}
+
+nav li a:hover {
+	background-color: grey;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+td {
+	color: #2d862d; 
+}
+
+#Survey h3 {
+	color: orange;
+}
+
+#Survey section {
+	width: 30%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: no-wrap;
+	justify-content: space-between;
+}
+
+#Survey aside {
+	margin: 5px;
+}
+
+#favorite {
+	width: 40%;
+	height: 200px;
+	border: orange dashed 3px;
+}
+
+#Introduction section {
+	width: 50%;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
+
+figcaption {
+	color: #b33c00;
+}
+
+figure {
+	display: inline-block;
+	height: auto;
+	width: 50%;
+    margin: 0;
+    padding: 0;
+}
+
+figure > img {
+	height: auto;
+	width: 300px;
+}
+
+#Survey h2 {
+	text-align: center;
+	color: #993333;
+}
+
+#Survey h2 span {
+	animation: epilepsie 2s infinite;
+}
+
+@keyframes epilepsie {
+	0% { color: red;}
+	50% { color: yellow;}
+	100% { color: green;}
+}
+
+#Survey input {
+	display: inline;
+}
+
+#Survey input,label {
+	text-align: center;
+}
+
+.pozacreata {
+	width: 20%;
+	height: 20%;
+}
